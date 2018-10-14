@@ -3,11 +3,11 @@ FROM lsiobase/ubuntu:xenial
 # set version label
 ARG BUILD_DATE
 ARG VERSION
-LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
+LABEL build_version="Linuxserver.io fork"
+LABEL maintainer="Ashmodaj"
 
 # package versions
-ARG UNIFI_VER="5.6.40"
+ARG UNIFI_VER="5.9.29"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
