@@ -1,23 +1,9 @@
-[linuxserverurl]: https://linuxserver.io
-[forumurl]: https://forum.linuxserver.io
-[ircurl]: https://www.linuxserver.io/irc/
-[podcasturl]: https://www.linuxserver.io/podcast/
-[appurl]: https://www.ubnt.com/enterprise/#unifi
-[hub]: https://hub.docker.com/r/linuxserver/unifi/
+The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://unifi-sdn.ubnt.com/)
+[![unifi](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)
 
-[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
+# ashmodaj/docker-unifi
 
-The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
-* [forum.linuxserver.io][forumurl]
-* [IRC][ircurl] on freenode at `#linuxserver.io`
-* [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
-
-# linuxserver/unifi
-[![](https://images.microbadger.com/badges/version/linuxserver/unifi.svg)](https://microbadger.com/images/linuxserver/unifi "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/unifi.svg)](https://microbadger.com/images/linuxserver/unifi "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/unifi.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/unifi.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-unifi)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-unifi/)
-
-The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://www.ubnt.com/enterprise/#unifi)
-
-[![unifi](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)][appurl]
+This is a fork of the Linuxserver.io docker image to match to last version rather than LTS version.
 
 ## Usage
 
@@ -36,14 +22,6 @@ docker create \
   -p 6789:6789 \
   linuxserver/unifi
 ```
-
-You can choose between ,using tags, latest (default lts 5.6 release branch, and no tag required)  or the unstable (5.7) release branch of unifi.
-
-Add one of the tags, if required, to the linuxserver/unifi line of the run/create command in the following format, linuxserver/unifi:unstable
-
-#### Tags
-
-+ **unstable** : releases from the 5.9x branch.
 
 ## Parameters
 
@@ -110,33 +88,8 @@ When using a Security Gateway (router) it could be that network connected device
 
 * image version number
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/unifi`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' ashmodaj/docker-unifi`
 
 ## Versions
 
-+ **14.09.18:** Update to 5.6.40.
-+ **06.07.18:** Update to 5.6.39.
-+ **26.04.18:** Update to 5.6.37.
-+ **24.03.18:** Update to 5.6.36.
-+ **14.03.18:** Add unstable branch for 5.7x releases.
-+ **19.02.18:** Add port 6789 to support throughput test
-+ **09.02.18:** Update to 5.6.30.
-+ **08.02.18:** Use loop to simplify symlinks.
-+ **08.01.18:** Update to 5.6.29.
-+ **15.12.17:** Update to 5.6.26.
-+ **09.12.17:** Fix continuation lines.
-+ **12.11.17:** Add STUN server port 3478 mapping to example.
-+ **11.11.17:** Update to 5.6.22.
-+ **22.10.17:** Fix typos in Dockerfile and cert gen.
-+ **05.10.17:** Update to 5.5.24.
-+ **03.08.17:** Update to 5.5.20.
-+ **15.07.17:** Update to 5.5.19 and switch to using .deb package, no need to keep up with the unifi repo merry-go-round.
-+ **05.07.17:** Change repo to stable. Remove execstack command, no longer required.
-+ **18.03.17:** Fix execstack warning.
-+ **14.10.16:** Add version layer information.
-+ **20.09.16** Bump to pick up ver 5.27.
-+ **10.09.16** Add layer badges to README.
-+ **28.08.16** Add badges to README.
-+ **01.07.16** Switch to lsiobase/xenial for conformity.
-+ **25.06.16** Rebase to xenial and use updated repository.
-+ **02.11.15** Initial Release.
++ **22.11.18:** Fork and update to 5.9.29.
