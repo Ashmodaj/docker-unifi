@@ -1,6 +1,6 @@
-(https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png)
+https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png
 
-The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://unifi-sdn.ubnt.com/)[![unifi]
+The UniFi® Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance. [Unifi](https://unifi-sdn.ubnt.com/)
 
 # ashmodaj/docker-unifi
 
@@ -93,4 +93,4 @@ When using a Security Gateway (router) it could be that network connected device
 
 ## Versions
 
-+ **22.11.18:** Fork and update to 5.9.29.
++ **22.10.14:** Fork and update to 5.9.29.
