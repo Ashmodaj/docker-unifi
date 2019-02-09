@@ -7,7 +7,7 @@ LABEL build_version="Linuxserver.io fork"
 LABEL maintainer="Ashmodaj"
 
 # package versions
-ARG UNIFI_VER="5.9.29"
+ARG UNIFI_VER="5.10.12"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
