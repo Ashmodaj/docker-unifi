@@ -93,7 +93,6 @@ When using a Security Gateway (router) it could be that network connected device
 
 ## Versions
 
-+ **16.02.19:** Update to 5.10.19.
 + **14.02.19:** Update to 5.10.17.
 + **09.02.19:** Update to 5.10.12.
 + **22.10.18:** Fork and update to 5.9.29.
